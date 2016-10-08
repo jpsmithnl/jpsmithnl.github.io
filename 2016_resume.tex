@@ -1,0 +1,212 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[calibri]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{enumitem}
+\setlist[description]{leftmargin=\parindent,labelindent=1cm}
+\usepackage{hyperref}
+\usepackage{tabu}
+
+% Set applicant's personal data for header
+\name{Jordan P. Smith}
+\address{3 Guernsey Pl \linebreak St.John's, NL, A1E0C8}
+\contacts{(709) 743-3554 \linebreak jp.smith@mun.ca}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	\hrule height \sectionheaderhrlueheight
+	
+	% Print the content
+	\begin{cvsection}{Education}
+		\begin{tabu} to 1\textwidth { X[l]  X[1.5,c] X[.5,r] }
+		M.Eng in Computer Engineering$^*$ & Memorial University of Newfoundland & Spring 2017 \\
+		B.Eng in Computer Engineering & Memorial University of Newfoundland & Spring 2013 \\
+		\end{tabu}
+
+		\smallskip
+		\begin{itemize}[label={}]
+		\item\footnotesize{\textit{*~thesis: Predicting patient intravascular volume status from ultrasound videos}}
+		\end{itemize}
+		
+	\end{cvsection}
+	
+	\begin{cvsection}{Work Experience}
+		
+	\renewcommand\labelitemi{$\cdot$}
+
+		\begin{cvsubsection}{Graduate Teaching Assistance}{}{}
+			\begin{itemize}
+			\item ENGI7930 - Instrumentation and Experimental Design~~~ (May - Aug 2016)
+			\item ENGI5952 - Mechatronics I ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(Jan - April 2016)
+			\item ENGI1020 - Introduction To Programming ~~~~~~~~~~~~~~~~~~~~~~~~~~(Jan - April 2016)
+			\item ENGI7930 - Instrumentation and Experimental Design ~~~~(May - Aug 2015)
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Research Assistant - Biomedical}{Memorial University, NL}{June 2013 - Sept 2016}		
+			\begin{itemize}
+				\item Produced software, hardware and analysis related to patient monitoring, machine learning, point of care ultrasound, medical simulation, medical devices and telemedicine
+				\item Tools used include scikit, Flask, OpenCV, Swing, Hadoop, Weka, R, QT, SVN, Redmine and Doxygen 
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Research Assistant - Robotics}{Memorial University, NL}{May 2013 - June 2013}	
+			\begin{itemize}
+				\item Development of hardware and software for swarm robotics using ROS, Solidworks and Eagle
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Design Engineering - FPGAs }{Altera NTC, NL}{Sept - Jan 2012}		
+			\begin{itemize}
+				\item Verilog and C\# development for optical transport network (OTN) intellectual property solutions
+				\item Development of test scripts for a Verification and Validation plan
+				\item Automation of several project management tasks and scripted maintenance of a large JIRA installation
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Developer - Simulation}{Memorial University, NL}{Jan -  April 2013}
+			\begin{itemize}
+				\item Developed graphical effects in C++ as part of MUN partnership with Virtual Marine Technology
+				\item Products included procedural mesh and texture generation in OGRE, a particle system framework and integration of content with the existing simulation engine.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Programmer Analyst - Web}{ACOA Head Office, NB}{May - Aug 2011}
+			\begin{itemize}
+				\item Migrated MS SharePoint content and applied accessibility guidelines (WCAG 2.0) to all of ACOA's web content
+				\item Produced shell scripts, tests, documentation and guidelines using Microsoft technologies (.Net, C\#,PowerShell)
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Junior Software Developer}{NRC Inst. for Ocean Technology, NL}{Aug - Dec 2010, Jan - Apr 2010}
+			\begin{itemize}
+				\item Parsed and transfered data from deprecated DEC DATATRIEVE system to MS SQL Server system 
+				\item Developed reporting module which genereated PDF diagrams for Ice Tank testing 
+				\item Created wxPython GUI for accessing text data and analysis tools for ice tank measurements
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+	
+	
+	\begin{tabu} to 1\textwidth { X[l]  X[l] X[l] }
+		\Large{\textsc{\textbf{Top Languages}}} & \Large{\textsc{\textbf{Projects}}} & \Large{\textsc{\textbf{Memberships}}} \\
+			
+		Python &
+		\href{http://munsailbot.blogspot.ca/}{MUN Sailbot} & 
+		\href{http://ewh.ieee.org/r7/newfoundland_labrador/}{IEEE}\\
+		
+		Java &
+		Brewing automation &
+		\href{https://www.acm.org/}{ACM} \\
+		
+		C++ &
+		\href{https://www.mun.ca/science/community/enrichment.php}{ESDNL robotics course} &
+		\href{http://fllnl.org/}{FLLNL committee} \\
+		 
+		Javascript &
+		\href{https://code.google.com/archive/p/arbot/}{Swarm robotics} &  \\
+	\end{tabu}
+	
+
+%		\begin{cvsubsection}{Projects}{}{}
+%			\begin{itemize}[label={}]
+%				\item \textbf{Sailbot} made boat
+%				\item \textbf{Swarm Robotics} made vardy bots
+%				\item \textbf{Embedded Electronics} educational robots
+%			\end{itemize}
+%		\end{cvsubsection}
+%	
+%		\begin{cvsubsection}{Publications}{}{}	
+%			\begin{itemize}[label={}]
+%				\item S. Bellows, J. Smith, et al. "Validation of a computerized technique for automatically tracking and measuring the inferior vena cava in ultrasound imagery." Innovation in Medicine and Healthcare, San Sebastian, Spain. Available: \url{http://ebooks.iospress.nl/publication/38636}
+%				\item J. Smith, B. Claus, et al. "Development of an Autonomous Sailboat" Newfoundland Electrical and Computer Engineering Conference, St.John's, NF, 2011. Available: \url{http://necec.engr.mun.ca/ocs2011/viewpaper.php?id=26&print=1}
+%			\end{itemize}
+%		\end{cvsubsection}
+%			
+%		\begin{cvsubsection}{Memberships}{}{}	
+%			\begin{itemize}[label={}]
+%			    \item IEEE (Institute of Electrical and Electronics Engineers)\\
+%			    \item Member of Association for Computing Machinery\\
+%%			    \item FLLNL comittee member
+%%			    \item Former MUN Sailbot team member\\
+%			\end{itemize}
+%		\end{cvsubsection}
+%		
+%	\end{cvsection}
+%	
+%	\begin{cvsection}{Languages and Technologies}
+%		\begin{cvsubsection}{}{}{}	
+%			\begin{itemize}[label={}]
+%				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
+%				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+%			\end{itemize}
+%		\end{cvsubsection}
+%	\end{cvsection}
+
+		
+%	\begin{cvsection}{Technical Experience}
+%	
+%		\begin{cvsubsection}{Projects}{}{}
+%			\begin{itemize}[label={}]
+%				\item \textbf{Sailbot} made boat
+%				\item \textbf{Swarm Robotics} made vardy bots
+%				\item \textbf{Embedded Electronics} educational robots
+%			\end{itemize}
+%		\end{cvsubsection}
+%	
+%		\begin{cvsubsection}{Publications}{}{}	
+%			\begin{itemize}[label={}]
+%				\item S. Bellows, J. Smith, et al. "Validation of a computerized technique for automatically tracking and measuring the inferior vena cava in ultrasound imagery." Innovation in Medicine and Healthcare, San Sebastian, Spain. Available: \url{http://ebooks.iospress.nl/publication/38636}
+%				\item J. Smith, B. Claus, et al. "Development of an Autonomous Sailboat" Newfoundland Electrical and Computer Engineering Conference, St.John's, NF, 2011. Available: \url{http://necec.engr.mun.ca/ocs2011/viewpaper.php?id=26&print=1}
+%			\end{itemize}
+%		\end{cvsubsection}
+%			
+%		\begin{cvsubsection}{Memberships}{}{}	
+%			\begin{itemize}[label={}]
+%			    \item IEEE (Institute of Electrical and Electronics Engineers)\\
+%			    \item Member of Association for Computing Machinery\\
+%%			    \item FLLNL comittee member
+%%			    \item Former MUN Sailbot team member\\
+%			\end{itemize}
+%		\end{cvsubsection}
+%		
+%	\end{cvsection}
+%	
+%	\begin{cvsection}{Languages and Technologies}
+%		\begin{cvsubsection}{}{}{}	
+%			\begin{itemize}[label={}]
+%				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
+%				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+%			\end{itemize}
+%		\end{cvsubsection}
+%	\end{cvsection}
+	
+\end{document}
+
